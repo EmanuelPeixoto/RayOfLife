@@ -27,6 +27,8 @@
           };
           buildPhase = ''
             gcc -o Ray-of-Life main.c -lraylib
+          '';
+          installPhase = ''
             mkdir -p $out/bin
             cp Ray-of-Life $out/bin/
           '';
