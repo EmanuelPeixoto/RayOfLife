@@ -4,6 +4,7 @@
 int main() {
   int screenWidth = 800;
   int screenHeight = 450;
+  SetConfigFlags(FLAG_WINDOW_RESIZABLE);
   InitWindow(screenWidth, screenHeight, "Minha janela");
   Camera2D camera = { 0 };
   camera.zoom = 1.0f;
