@@ -2,4 +2,4 @@
 
 premake5 gmake2
 make config=release
-exec ./bin/Release/TTTT-of-Life
+exec ./bin/Release/Grid-Test
