@@ -19,6 +19,7 @@
             pkgs.gnumake
             pkgs.pkg-config
             pkgs.raylib
+            pkgs.premake5
           ];
           nativeBuildInputs = [ pkgs.gnumake ];
           meta = with pkgs.lib; {
@@ -41,6 +42,7 @@
           pkgs.raylib
           pkgs.gdb
           pkgs.gnumake
+          pkgs.premake5
         ];
         shellHook = ''
           export LD_LIBRARY_PATH=${pkgs.lib.makeLibraryPath [ pkgs.libglvnd ]}:$LD_LIBRARY_PATH

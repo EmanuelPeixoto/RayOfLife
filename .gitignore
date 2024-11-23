@@ -2,3 +2,8 @@ Ray-of-Life
 Test-of-Life
 [Rr]esult/
 [Rr]esult
+*.out
+bin/
+obj/
+*.make
+[Mm]akefile
