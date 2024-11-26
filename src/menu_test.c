@@ -176,6 +176,7 @@ int main() {
   const char *debugLabels[] = { "Grid Markers", "Debug Text", "Return" };
   Menu debugMenu = CreateMenu(debugLabels, 3, screenWidth, screenHeight);
 
+  // Game Loop
   while (!WindowShouldClose()) {
     HandleControls(&cfg, &camera);
 
@@ -227,6 +228,7 @@ int main() {
       }
 
       // Draw exclusively during gameplay
+      // I personally don't see a use case for this
       if (!cfg.is_paused) {
 
       }
