@@ -44,3 +44,17 @@ project "Menu-Test"
     filter "configurations:Release"
         optimize "On"
 
+project "Render-Test"
+    kind "WindowedApp"
+    language "C"
+    files { "render_test.c" }
+
+    links { "raylib", "m" }
+
+    filter "configurations:Debug"
+        symbols "On"
+        buildoptions { "-DDEBUG" }
+
+    filter "configurations:Release"
+        optimize "On"
+
